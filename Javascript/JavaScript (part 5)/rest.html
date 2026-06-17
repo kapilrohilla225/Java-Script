@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = (...args) =>{
+            for(let i=0;i<args.length;i++){
+                console.log("you gave us: ",args[i]);
+            }
+        }
+        //args take multiple arguments 
+        //after take inputs store into multiple array
+        let min = (...args) =>{
+            return args.reduce((min,el) =>{
+                if(min > el){
+                    return el;
+                }
+                else{
+                    return min;
+                }
+            })
+        }
+    </script>
+</body>
+</html>

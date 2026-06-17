@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mergeObjects(obj1,obj2){
+            return {...obj1,...obj2};
+        }
+        const obj1 ={
+            Name: "kapil"
+        }
+        const obj2 ={
+            city:"Bhiwani"
+        }
+        console.log(mergeObjects(obj1,obj2));
+    </script>
+</body>
+</html>

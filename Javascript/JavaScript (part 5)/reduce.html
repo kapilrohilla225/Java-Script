@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reduce practice 
+        // arr.reduce(reducer function with 2 variable for(ac cumulator,element));
+        let nums = [1,2,3,4];
+        let finalVal = nums.reduce((res,el) =>{
+            // console.log(res);
+            console.log(el);
+            return res+el;
+        })
+
+
+        //To find Max number in Array
+        let max = nums.reduce((max,el) =>{
+            if(max>el){
+                return max;
+            }
+            else{
+                return el;
+            }
+        })
+        console.log(max);
+    </script>
+</body>
+</html>

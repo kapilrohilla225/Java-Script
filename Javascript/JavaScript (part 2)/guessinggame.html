@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num ;
+        num = prompt("Enter The Max Number");
+        let guess = Math.floor(Math.random() * num) + 1;;
+        while(true){
+            if(guess == 'quit'){
+                console.log("Game Over. The number was " + num);
+                break;
+            }
+            else if(guess == num){
+                console.log("Congratulations! You guessed the number.", guess);
+            }
+            else{
+                guess = prompt("Wrong guess. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
